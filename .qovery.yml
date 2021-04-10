@@ -1,0 +1,15 @@
+---
+application:
+  name: "bot"
+  project: "test"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "comments"
+  version: "11"
+routers:
+- name: "main-bot"
+  routes:
+  - application_name: "bot"
+    paths:
+    - "/*"
